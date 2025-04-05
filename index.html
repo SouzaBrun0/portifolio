@@ -11,7 +11,14 @@
     <div class="particulas"></div>
 
     <nav class="navegacao">
-        <ul class="menu">
+        <!-- Menu Hambúrguer -->
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="menu" id="menu-links">
             <li>
                 <a class="menu-link" href="#inicio">Início</a>
             </li>
@@ -27,10 +34,9 @@
             <li>
                 <a class="menu-link" href="#contato">Contato</a>
             </li>
-
         </ul>
     </nav>
-
+    
     <main id="inicio" class="cabecalho">
             <img src="./img/myphoto.jpeg" alt="foto de bruno" class="foto-perfil">
             <h1>Bruno Souza</h1>
@@ -164,6 +170,23 @@
 
             window.open(url, '_blank')
         }
+
+        // Seleciona o menu, o ícone e os links do menu
+        const menuIcon = document.getElementById('menu-icon');
+        const menuLinks = document.getElementById('menu-links');
+        const menuItems = document.querySelectorAll('.menu-link');  // Seleciona todos os links do menu
+
+        // Alternar a visibilidade do menu ao clicar no ícone
+        menuIcon.addEventListener('click', () => {
+            menuLinks.classList.toggle('active');
+        });
+
+        // Fecha o menu ao clicar em um item
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menuLinks.classList.remove('active'); // Fecha o menu
+            });
+        });
 
        
     </script>
