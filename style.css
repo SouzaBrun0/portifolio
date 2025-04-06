@@ -186,6 +186,21 @@ h1{
 }
 
 
+
+.card-contatos{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    margin: 0 auto;
+    padding: 15px;
+    width: 45%;
+    text-align: center;
+}
+
+
+
+
+
 .projetos-titulo{
     text-align: center;
     font-size: 2.5rem;
@@ -225,7 +240,7 @@ h1{
 .contato-titulo{
     text-align: center;
     font-size: 2.2rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 .contato-h3{
