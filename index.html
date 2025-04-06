@@ -144,7 +144,29 @@
     </section>
 
     <section id="contato" class="contato">
-        <h2 class="contato-titulo">Entre em Contato</h2>
+        <h2 class="contato-titulo">Contato</h2>
+        
+        <div class="dv-contact">
+            <h3>
+                E-mail: 
+            </h3>
+            <p>
+                brunosouz4dev@gmail.com
+            </p>
+        </div>
+         
+        <div class="dv-contact">
+            <h3>
+                Telefone
+            </h3>
+            <p>
+                79 999606574
+            </p>
+        </div>
+
+
+        <h3 class="contato-titulo">Entre em Contato</h3>
+
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
 
             <div class="grupo-form">
@@ -154,7 +176,7 @@
                 <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
             </div>
 
-            <button type="submit" class="botao-form">Enviar Mensagem</button>
+            <button type="submit" class="botao-form">Enviar E-mail</button>
         </form>
 
 
@@ -166,12 +188,14 @@
             event.preventDefault()  //nao recarrega a pagina ao usar a função
             const nome = document.getElementById('nome').value;
             const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5579999606574'
+            const email = "brunosouz4dev@gmail.com";
 
             const texto = `Olá! Me chamo ${nome}, ${mensagem}`
             const msgFormatada = encodeURIComponent(texto)
 
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+            const url = `mailto:${email}?subject=${encodeURIComponent(mensagem)}&body=${encodeURIComponent(texto)}`;
+
+
 
             window.open(url, '_blank')
         }

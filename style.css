@@ -226,6 +226,20 @@ h1{
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 50px;
+    padding: 10px;
+}
+.contato-h3{
+    text-align: center;
+}
+
+.dv-contact{
+    margin: 0 auto; /* centraliza horizontalmente */
+    width: fit-content; /* ajusta a largura ao conteúdo */
+    border-radius: 15px; /* arredondamento */
+    padding: 5%;
+    background-color:#4e46e51d; /* cor de fundo escura */
+    text-align: center;
+    font-size: 1.15rem;
 }
 
 .formulario-contato{
