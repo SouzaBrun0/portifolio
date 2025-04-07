@@ -193,9 +193,13 @@ h1{
     border: 1px solid var(--vidro);
     margin: 0 auto;
     padding: 15px;
-    width: 45%;
+    width: 330px;
+    height: 90px;
     text-align: center;
+    margin-bottom: 20px;
 }
+
+
 
 
 
@@ -233,9 +237,7 @@ h1{
     margin-bottom: 5px;
 }
 
-.contatos{
-    padding: 6rem 2rem;
-}
+
 
 .contato-titulo{
     text-align: center;
